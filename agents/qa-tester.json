@@ -1,0 +1,9 @@
+{
+  "kiro_agent": "qa-tester",
+  "workspace": "demo-tech",
+  "memory_store": "qa-tester",
+  "model": "claude-sonnet-4.6",
+  "description": "Writes and runs tests (unit, integration, e2e) and enforces quality gates.",
+  "triggers": "tests, QA, unit test, integration test, e2e, quality gate, coverage",
+  "source": "builtin"
+}

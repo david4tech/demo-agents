@@ -1,0 +1,9 @@
+{
+  "kiro_agent": "backend-dev",
+  "workspace": "demo-tech",
+  "memory_store": "backend-dev",
+  "model": "claude-sonnet-5",
+  "description": "Writes backend code: APIs, services, and lambdas for the demo.",
+  "triggers": "backend, API, lambda, service code, endpoint, business logic",
+  "source": "builtin"
+}

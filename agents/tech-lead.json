@@ -1,0 +1,9 @@
+{
+  "kiro_agent": "tech-lead",
+  "workspace": "demo-tech",
+  "memory_store": "tech-lead",
+  "model": "claude-opus-4.8",
+  "description": "Orchestrator for the demo tech department. Decomposes the user task and delegates to specialists, coordinating the full flow.",
+  "triggers": "build feature, full flow, orchestrate, coordinate, tech lead, end to end, demo build, delegate to team",
+  "source": "builtin"
+}

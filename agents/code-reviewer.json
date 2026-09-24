@@ -1,0 +1,9 @@
+{
+  "kiro_agent": "code-reviewer",
+  "workspace": "demo-tech",
+  "memory_store": "code-reviewer",
+  "model": "claude-sonnet-5",
+  "description": "Reviews PRs, validates standards, and approves or requests changes.",
+  "triggers": "code review, review PR, approve, request changes, standards check",
+  "source": "builtin"
+}

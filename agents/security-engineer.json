@@ -1,0 +1,9 @@
+{
+  "kiro_agent": "security-engineer",
+  "workspace": "demo-tech",
+  "memory_store": "security-engineer",
+  "model": "claude-sonnet-5",
+  "description": "Reviews vulnerabilities, IAM policies, and compliance for the demo.",
+  "triggers": "security, vulnerability, IAM policy, compliance, least privilege, secrets scan",
+  "source": "builtin"
+}

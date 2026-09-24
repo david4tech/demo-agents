@@ -1,0 +1,9 @@
+{
+  "kiro_agent": "frontend-dev",
+  "workspace": "demo-tech",
+  "memory_store": "frontend-dev",
+  "model": "claude-sonnet-5",
+  "description": "Writes frontend code and UI for the demo.",
+  "triggers": "frontend, UI, react, component, styling, web app",
+  "source": "builtin"
+}
