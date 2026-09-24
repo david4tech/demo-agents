@@ -11,17 +11,17 @@ security -> CI/CD).
 
 ## Roster
 
-| Agent | Stage | Owns | Model |
-|---|---|---|---|
-| `tech-lead` | 0 Orchestrate | Decompose, delegate, synthesize (does not implement) | claude-opus-4.8 |
-| `cloud-architect` | 1 Design | AWS architecture, service selection, diagrams | claude-opus-4.8 |
-| `infra-engineer` | 2 Infra | Terraform / CloudFormation, provisioning | claude-sonnet-5 |
-| `backend-dev` | 3 Code (parallel) | APIs, services, lambdas | claude-sonnet-5 |
-| `frontend-dev` | 3 Code (parallel) | UI | claude-sonnet-5 |
-| `qa-tester` | 4 Tests | unit / integration / e2e, quality gates | claude-sonnet-4.6 |
-| `code-reviewer` | 5 Validate (parallel) | PR review, standards | claude-sonnet-5 |
-| `security-engineer` | 5 Validate (parallel) | vulns, IAM, compliance, secrets scan | claude-sonnet-5 |
-| `cicd-engineer` | 6 Deploy | pipelines, build, deploy, monitoring | claude-sonnet-4.6 |
+| Agent | Stage | Owns | Model | MCP | Skills |
+|---|---|---|---|---|---|
+| `tech-lead` | 0 Orchestrate | Decompose, delegate, synthesize (does not implement) | claude-opus-4.8 | kirocrew-core | - |
+| `cloud-architect` | 1 Design | AWS architecture, service selection, diagrams | claude-opus-4.8 | awsdac, aws-diagram, aws-pricing-calculator | - |
+| `infra-engineer` | 2 Infra | Terraform / CloudFormation, provisioning | claude-sonnet-5 | github, aws-pricing-calculator | prepare-pr |
+| `backend-dev` | 3 Code (parallel) | APIs, services, lambdas | claude-sonnet-5 | github | prepare-pr |
+| `frontend-dev` | 3 Code (parallel) | UI | claude-sonnet-5 | github | frontend-design-workflow, web-verify, prepare-pr |
+| `qa-tester` | 4 Tests | unit / integration / e2e, quality gates | claude-sonnet-4.6 | - | pod-e2e, web-verify |
+| `code-reviewer` | 5 Validate (parallel) | PR review, standards | claude-sonnet-5 | github | sage-review |
+| `security-engineer` | 5 Validate (parallel) | vulns, IAM, compliance, secrets scan | claude-sonnet-5 | aws-pricing-calculator | - |
+| `cicd-engineer` | 6 Deploy | pipelines, build, deploy, monitoring | claude-sonnet-4.6 | github | prepare-pr |
 
 ## Orchestration
 
@@ -40,15 +40,16 @@ tech-lead
   6  cicd-engineer
 ```
 
-See `docs/orchestration.md` for the full flow and rules.
+See `docs/orchestration.md` for the full flow and `docs/mcp-and-skills.md` for
+the per-agent MCP and skill wiring.
 
 ## Layout
 
 ```
-agents/    <- per-agent registration (model, description, triggers, workspace, memory store)
+agents/    <- per-agent registration (model, description, triggers, mcp, skills, workspace, memory store)
 prompts/   <- each agent's system/steering prompt
 crew.json  <- machine-readable roster
-docs/      <- orchestration notes
+docs/      <- orchestration + MCP/skills notes
 ```
 
 ## Notes
@@ -56,4 +57,6 @@ docs/      <- orchestration notes
 - Each agent runs in its own isolated workspace + memory store.
 - Model tiers are chosen per role: heavy reasoning on opus, code/review/security
   on sonnet-5, QA and CI/CD on sonnet-4.6.
+- `mcp` and `skills` reflect the crew's intended wiring. Exact low-level tool
+  allowlists live in the Kiro CLI agent definitions and are not included here.
 - These are definitions only. No credentials or secrets are included.

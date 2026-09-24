@@ -5,5 +5,7 @@
   "model": "claude-opus-4.8",
   "description": "Designs AWS architecture, selects services, and produces diagrams (awsdac YAML + mingrammer).",
   "triggers": "architecture, solution design, AWS diagram, service selection, diagram, cost estimate",
+  "mcp": ["awsdac", "aws-diagram", "aws-pricing-calculator"],
+  "skills": [],
   "source": "builtin"
 }

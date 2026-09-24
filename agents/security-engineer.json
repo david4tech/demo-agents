@@ -5,5 +5,7 @@
   "model": "claude-sonnet-5",
   "description": "Reviews vulnerabilities, IAM policies, and compliance for the demo.",
   "triggers": "security, vulnerability, IAM policy, compliance, least privilege, secrets scan",
+  "mcp": ["aws-pricing-calculator"],
+  "skills": [],
   "source": "builtin"
 }

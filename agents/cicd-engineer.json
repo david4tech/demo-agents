@@ -5,5 +5,7 @@
   "model": "claude-sonnet-4.6",
   "description": "Configures CI/CD pipelines, builds, deploys, and monitoring for the demo.",
   "triggers": "pipeline, CI/CD, codepipeline, build, deploy, monitoring, observability",
+  "mcp": ["github"],
+  "skills": ["prepare-pr"],
   "source": "builtin"
 }

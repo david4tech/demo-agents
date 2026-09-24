@@ -5,5 +5,7 @@
   "model": "claude-sonnet-5",
   "description": "Writes Terraform/CloudFormation and provisions AWS infrastructure for the demo.",
   "triggers": "terraform, cloudformation, IaC, provision infra, deploy infrastructure, VPC, EKS, ECS",
+  "mcp": ["github", "aws-pricing-calculator"],
+  "skills": ["prepare-pr"],
   "source": "builtin"
 }

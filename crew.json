@@ -8,6 +8,8 @@
       "model": "claude-opus-4.8",
       "description": "Orchestrator for the demo tech department. Decomposes the user task and delegates to specialists, coordinating the full flow.",
       "triggers": "build feature, full flow, orchestrate, coordinate, tech lead, end to end, demo build, delegate to team",
+      "mcp": ["kirocrew-core"],
+      "skills": [],
       "source": "builtin"
     },
     "cloud-architect": {
@@ -17,6 +19,8 @@
       "model": "claude-opus-4.8",
       "description": "Designs AWS architecture, selects services, and produces diagrams (awsdac YAML + mingrammer).",
       "triggers": "architecture, solution design, AWS diagram, service selection, diagram, cost estimate",
+      "mcp": ["awsdac", "aws-diagram", "aws-pricing-calculator"],
+      "skills": [],
       "source": "builtin"
     },
     "infra-engineer": {
@@ -26,6 +30,8 @@
       "model": "claude-sonnet-5",
       "description": "Writes Terraform/CloudFormation and provisions AWS infrastructure for the demo.",
       "triggers": "terraform, cloudformation, IaC, provision infra, deploy infrastructure, VPC, EKS, ECS",
+      "mcp": ["github", "aws-pricing-calculator"],
+      "skills": ["prepare-pr"],
       "source": "builtin"
     },
     "backend-dev": {
@@ -35,6 +41,8 @@
       "model": "claude-sonnet-5",
       "description": "Writes backend code: APIs, services, and lambdas for the demo.",
       "triggers": "backend, API, lambda, service code, endpoint, business logic",
+      "mcp": ["github"],
+      "skills": ["prepare-pr"],
       "source": "builtin"
     },
     "frontend-dev": {
@@ -44,6 +52,8 @@
       "model": "claude-sonnet-5",
       "description": "Writes frontend code and UI for the demo.",
       "triggers": "frontend, UI, react, component, styling, web app",
+      "mcp": ["github"],
+      "skills": ["frontend-design-workflow", "web-verify", "prepare-pr"],
       "source": "builtin"
     },
     "qa-tester": {
@@ -53,6 +63,8 @@
       "model": "claude-sonnet-4.6",
       "description": "Writes and runs tests (unit, integration, e2e) and enforces quality gates.",
       "triggers": "tests, QA, unit test, integration test, e2e, quality gate, coverage",
+      "mcp": [],
+      "skills": ["pod-e2e", "web-verify"],
       "source": "builtin"
     },
     "code-reviewer": {
@@ -62,6 +74,8 @@
       "model": "claude-sonnet-5",
       "description": "Reviews PRs, validates standards, and approves or requests changes.",
       "triggers": "code review, review PR, approve, request changes, standards check",
+      "mcp": ["github"],
+      "skills": ["sage-review"],
       "source": "builtin"
     },
     "security-engineer": {
@@ -71,6 +85,8 @@
       "model": "claude-sonnet-5",
       "description": "Reviews vulnerabilities, IAM policies, and compliance for the demo.",
       "triggers": "security, vulnerability, IAM policy, compliance, least privilege, secrets scan",
+      "mcp": ["aws-pricing-calculator"],
+      "skills": [],
       "source": "builtin"
     },
     "cicd-engineer": {
@@ -80,6 +96,8 @@
       "model": "claude-sonnet-4.6",
       "description": "Configures CI/CD pipelines, builds, deploys, and monitoring for the demo.",
       "triggers": "pipeline, CI/CD, codepipeline, build, deploy, monitoring, observability",
+      "mcp": ["github"],
+      "skills": ["prepare-pr"],
       "source": "builtin"
     }
   }
