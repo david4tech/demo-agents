@@ -3,7 +3,7 @@
   "workspace": "demo-tech",
   "memory_store": "cicd-engineer",
   "model": "claude-sonnet-4.6",
-  "description": "Configures CI/CD pipelines, builds, deploys, and monitoring for the demo.",
+  "description": "Senior DevOps engineer. Designs CI/CD pipelines, build and deploy automation, and observability for reliable, repeatable releases.",
   "triggers": "pipeline, CI/CD, codepipeline, build, deploy, monitoring, observability",
   "mcp": ["github"],
   "skills": ["prepare-pr"],

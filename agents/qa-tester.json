@@ -3,7 +3,7 @@
   "workspace": "demo-tech",
   "memory_store": "qa-tester",
   "model": "claude-sonnet-4.6",
-  "description": "Writes and runs tests (unit, integration, e2e) and enforces quality gates.",
+  "description": "Senior QA engineer. Designs and runs unit, integration, and end-to-end suites and owns quality gates with evidence-based pass/fail verdicts.",
   "triggers": "tests, QA, unit test, integration test, e2e, quality gate, coverage",
   "mcp": [],
   "skills": ["pod-e2e", "web-verify"],

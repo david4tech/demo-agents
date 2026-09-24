@@ -3,7 +3,7 @@
   "workspace": "demo-tech",
   "memory_store": "backend-dev",
   "model": "claude-sonnet-5",
-  "description": "Writes backend code: APIs, services, and lambdas for the demo.",
+  "description": "Senior backend engineer. Builds secure-by-default APIs, services, and lambdas with rigorous input validation, error handling, and test-ready code.",
   "triggers": "backend, API, lambda, service code, endpoint, business logic",
   "mcp": ["github"],
   "skills": ["prepare-pr"],

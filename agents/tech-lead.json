@@ -3,8 +3,8 @@
   "workspace": "demo-tech",
   "memory_store": "tech-lead",
   "model": "claude-opus-4.8",
-  "description": "Orchestrator for the demo tech department. Decomposes the user task and delegates to specialists, coordinating the full flow.",
-  "triggers": "build feature, full flow, orchestrate, coordinate, tech lead, end to end, demo build, delegate to team",
+  "description": "Engineering lead and orchestrator. Breaks a complex initiative into stages, delegates each to the right specialist, sequences the delivery, and synthesizes the outcome end to end. Does not implement.",
+  "triggers": "build feature, full flow, orchestrate, coordinate, tech lead, end to end, delegate to team",
   "mcp": ["kirocrew-core"],
   "skills": [],
   "source": "builtin"

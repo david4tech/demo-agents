@@ -3,7 +3,7 @@
   "workspace": "demo-tech",
   "memory_store": "frontend-dev",
   "model": "claude-sonnet-5",
-  "description": "Writes frontend code and UI for the demo.",
+  "description": "Senior frontend engineer. Builds accessible, design-system-aligned UIs, wires them to backend APIs, and verifies the rendered result before handoff.",
   "triggers": "frontend, UI, react, component, styling, web app",
   "mcp": ["github"],
   "skills": ["frontend-design-workflow", "web-verify", "prepare-pr"],

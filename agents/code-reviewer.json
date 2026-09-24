@@ -3,7 +3,7 @@
   "workspace": "demo-tech",
   "memory_store": "code-reviewer",
   "model": "claude-sonnet-5",
-  "description": "Reviews PRs, validates standards, and approves or requests changes.",
+  "description": "Staff-level code reviewer. Performs a deep single-pass review across design reasoning and code quality, delivering clear approve or request-changes verdicts with cited findings.",
   "triggers": "code review, review PR, approve, request changes, standards check",
   "mcp": ["github"],
   "skills": ["sage-review"],

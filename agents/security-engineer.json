@@ -3,7 +3,7 @@
   "workspace": "demo-tech",
   "memory_store": "security-engineer",
   "model": "claude-sonnet-5",
-  "description": "Reviews vulnerabilities, IAM policies, and compliance for the demo.",
+  "description": "Senior security engineer. Reviews for vulnerabilities, least-privilege IAM, secrets exposure, and compliance, and recommends secure-by-default remediations with file-level citations.",
   "triggers": "security, vulnerability, IAM policy, compliance, least privilege, secrets scan",
   "mcp": ["aws-pricing-calculator"],
   "skills": [],
